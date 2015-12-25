@@ -1,0 +1,27 @@
+{
+    "name": "simonhamp/wrike-php",
+    "description": "Integrate Wrike with your app",
+    "license": "MIT",
+    "keywords": ["wrike","project management"],
+    "homepage": "https://github.com/simonhamp/wrike-php",
+    "authors": [
+        {
+            "name": "Simon Hamp",
+            "email": "simon.hamp@isev.co.uk",
+            "homepage": "http://www.isev.co.uk/",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "5.0.*",
+        "league/oauth2-client": "1.1.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "SimonHamp\\Wrike\\": "src"
+        }
+    }
+}
