@@ -1,9 +1,9 @@
 {
-    "name": "simonhamp/wrike-php",
+    "name": "isevltd/wrike-php",
     "description": "Integrate Wrike with your app",
     "license": "MIT",
     "keywords": ["wrike","project management"],
-    "homepage": "https://github.com/simonhamp/wrike-php",
+    "homepage": "https://github.com/isevltd/Wrike-PHP",
     "authors": [
         {
             "name": "Simon Hamp",
@@ -21,7 +21,7 @@
     },
     "autoload": {
         "psr-4": {
-            "SimonHamp\\Wrike\\": "src"
+            "IsevLtd\\Wrike\\": "src"
         }
     }
 }

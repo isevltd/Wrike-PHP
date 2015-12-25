@@ -7,7 +7,7 @@ This package provides easy access to the Wrike API in your PHP application.
 To install, use Composer:
 
 ```
-composer require simonhamp/wrike-php
+composer require isevltd/wrike-php
 ```
 
 ## Usage
@@ -18,18 +18,18 @@ Wrike uses OAuth2 to authenticate and track API requests. So in order to use the
 
 ```php
 // Register your credentials globally
-\SimonHamp\Wrike\Client::registerCredentials([
+\IsevLtd\Wrike\Client::registerCredentials([
     'client_id'     => '{your-client-id}',
     'client_secret' => '{your-client-secret}',
     'redirect_url'  => '{your-apps-callback-url}'
 ]);
 
-$wrike = new \SimonHamp\Wrike\Client;
+$wrike = new \IsevLtd\Wrike\Client;
 
 - OR -
 
 // Per-instance credentials
-$wrike = new \SimonHamp\Wrike\Client([
+$wrike = new \IsevLtd\Wrike\Client([
     'client_id'     => '{your-client-id}',
     'client_secret' => '{your-client-secret}',
     'redirect_url'  => '{your-apps-callback-url}'
@@ -50,15 +50,15 @@ $ ./vendor/bin/phpunit
 
 ## Contributing
 
-Please see [CONTRIBUTING](https://github.com/simonhamp/wrike-php/blob/master/CONTRIBUTING.md) for details.
+Please see [CONTRIBUTING](https://github.com/isevltd/Wrike-PHP/blob/master/CONTRIBUTING.md) for details.
 
 
 ## Credits
 
 - [Simon Hamp](https://github.com/simonhamp)
-- [All Contributors](https://github.com/simonhamp/wrike-php/contributors)
+- [All Contributors](https://github.com/isevltd/Wrike-PHP/contributors)
 
 
 ## License
 
-The MIT License (MIT). Please see [License File](https://github.com/stevenmaguire/oauth2-bitbucket/blob/master/LICENSE) for more information.
+The MIT License (MIT). Please see [License File](https://github.com/isevltd/Wrike-PHP/blob/master/LICENSE) for more information.

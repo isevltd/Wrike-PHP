@@ -6,8 +6,8 @@ include '../src/Provider/WrikeResourceOwner.php';
 
 session_start();
 
-use SimonHamp\OAuth2\Client\Provider\Wrike as WrikeProvider;
-use SimonHamp\Wrike\Client as Wrike;
+use IsevLtd\OAuth2\Client\Provider\Wrike as WrikeProvider;
+use IsevLtd\Wrike\Client as Wrike;
 use League\OAuth2\Client\Token\AccessToken;
 use League\OAuth2\Client\Provider\Exception\IdentityProviderException;
 

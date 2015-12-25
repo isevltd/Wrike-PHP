@@ -1,6 +1,6 @@
-<?php namespace SimonHamp\Wrike;
+<?php namespace IsevLtd\Wrike;
 
-use SimonHamp\OAuth2\Client\Provider\Wrike as WrikeProvider;
+use IsevLtd\OAuth2\Client\Provider\Wrike as WrikeProvider;
 use League\OAuth2\Client\Token\AccessToken;
 
 class Client {
