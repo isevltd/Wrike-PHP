@@ -16,31 +16,7 @@ composer require isevltd/wrike-php
 
 Wrike uses OAuth2 to authenticate and track API requests. So in order to use the API you will need to register an API client app first. You can do that [here](https://developers.wrike.com/getting-started/).
 
-```php
-// Register your credentials globally
-\IsevLtd\Wrike\Client::registerCredentials([
-    'client_id'     => '{your-client-id}',
-    'client_secret' => '{your-client-secret}',
-    'redirect_url'  => '{your-apps-callback-url}'
-]);
-
-$wrike = new \IsevLtd\Wrike\Client;
-
-- OR -
-
-// Per-instance credentials
-$wrike = new \IsevLtd\Wrike\Client([
-    'client_id'     => '{your-client-id}',
-    'client_secret' => '{your-client-secret}',
-    'redirect_url'  => '{your-apps-callback-url}'
-]);
-
-- THEN -
-
-// Call methods
-
-$wrike->getFolders();
-```
+See the [example](https://github.com/isevltd/Wrike-PHP/blob/master/examples/index.php).
 
 ## Testing
 
