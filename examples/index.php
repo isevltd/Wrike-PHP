@@ -48,7 +48,7 @@ function authenticate( $oauth ) {
   }
 }
 
-if ( ! $_SESSION[ 'wrike_token' ] instanceof AccessToken ) {
+if ( !isset( $_SESSION[ 'wrike_token' ] ) || ! $_SESSION[ 'wrike_token' ] instanceof AccessToken ) {
   authenticate( $oauth );
 }
 elseif ( $_SESSION[ 'wrike_token' ]->getExpires() < time() ) {
